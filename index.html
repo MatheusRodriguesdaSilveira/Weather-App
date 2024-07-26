@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link href="/src/input.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="/img/clear.png" type="png" rel="website icon">
+
+</head>
+<body>
+
+    <div class="flex items-center">
+        <h1 class="text-4xl text-white font-bold m-5">Weather App<i class="fa-solid fa-wind px-3 text-3xl" aria-label="Wind icon"></i></h1>
+    </div>
+    
+    <form class="flex w-[300px] justify-center items-center" id="busca">
+        <div class="relative h-16 p-10 bg-slate-300 px-4 rounded-xl flex items-center gap-3 ease-out">
+            <i class="fa-solid fa-location-dot text-[30px] text-zinc-800" aria-label="Location icon"></i>
+            <input class="flex-1 p-3 outline-none text-base rounded-md bg-white"
+                   type="search" 
+                   id="searchInput"
+                   placeholder="Enter your Location" 
+                   aria-label="Enter your location"/>
+
+            <div class="items-center justify-center text-center flex">
+                <button class="bg-slate-400 hover:bg-slate-500 transition-all duration-200 ease-in-out rounded-full w-[50px] h-[50px]" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass text-[20px] flex justify-center h-1 font-bold"></i>
+                </button>
+            </div>
+        </div>
+    </form>    
+
+    <div class="resultado bg-slate-400 justify-center items-center">
+        <div class="titulo flex justify-center text-center w-full items-center p-5 font-bold text-2xl text-zinc-800"><i class="fa-solid fa-globe" aria-label="Globe icon"></i>--</div>
+
+        <div class="info flex w-full">
+            <div class="temp items-center flex-1">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">--</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather icon"/>
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">--</div>
+                <div class="ventoArea mb-5">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between w-full">
+            <div class="tempHumidade">Humidade</div>    
+            <div class="tempHumidade">Descrição</div>
+        </div>
+
+        <div class="flex justify-between w-full">            
+            <div class="humidity text-white">--</div>
+            <div class="desc text-white right-auto">--</div>    
+        </div>
+    </div>
+
+    <div class="aviso pt-5 text-white text-lg" id="aviso"></div>
+
+    <script src="https://kit.fontawesome.com/58fdf36e10.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
