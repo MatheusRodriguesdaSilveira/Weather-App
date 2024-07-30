@@ -5,7 +5,7 @@ O desenvolvimento de um aplicativo de clima em tempo real é um projeto interess
 Javascript, HTML, TailwindCSS
 
 
-## Screenshots
+## 📷 Screenshots
 ![image](https://github.com/user-attachments/assets/7fe99ed7-5012-40ef-973e-4b3e8514b369)  
 ![image](https://github.com/user-attachments/assets/02b33cad-9d40-44fd-9ac1-a201c0dbea0d)
 
